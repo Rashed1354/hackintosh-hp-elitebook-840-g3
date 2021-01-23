@@ -70,6 +70,34 @@ Repository contains configuration, kexts, etc for hackintosh on HP EliteBook 840
      * Disable TXT
      
 
+
+## Installation
+### Step one: create bootable USB of macOS
+You need a flash drive with size of 16 GB. Then make a bootable USB of macOS on another Mac machine. Borrow a real Mac, or use a Hackintosh.
+
+### Step two: install Hackintosh
+Then, you need to install macOS on your EliteBook 840 G3. Just run macOS Installation, clear drive with Disk Utility, and install macOS using Install macOS option.
+
+### Step three: postinstall
+Download the Postinstall.zip package from release that you are downloading. Now, drag both HeliPort and Hackintool apps to Applications folder, open Applications folder, right-click on HeliPort, and click Open, then click Open in dialog. This will prevent macOS from saying This is a not trusted app. Next, open System Settings. Click Users & Groups. Select your user, and click Login items. Click the + icon, and select HeliPort from popup window.
+
+### Step three.one: fix display colors
+Go to Apple > System Preferences > Display > Color, then select P3(display). This fixes blue color represented like purple color.
+
+## Step three.two: install serial number and UUID to fix Apple ID, iCloud, App Store, iMessage and more
+First, open Hackintool from Launchpad or Spotlight. Go to System tab, and in that tab, click Serial Generator. At the bottom, select MacBookPro13,1, and click at the refresh icon. Now, mount your EFI. Go to Disks tab, right-click the EFI partition, and click Mount. Then, right-click again, and click Open.
+
+## Next, navigate to EFI > OC and open config.plist in Xcode. Now, expand Plaforminfo, and in it Generic. In row SystemProductName write MacBookPro13,1, in row SystemSerialNumber paste the Serial Number from Hackintool. The same applies to SystemUUID: paste there SmUUID from Hackintool.
+
+## Step three.three: make boot look nice
+If you haven't closed your config.plist in Xcode, good. If not, open it again. In the menu bar select Find, and then Find in Workspace or press Shift+Command+F. Now, type in search box -v, and click first result. (If nothing appears, proceed to next step.) Then, scroll a little bit down to reveal the selected result. Now, select the text box and delect -v part from it (if you're curious what does it do, basically it replaces normal graphical boot with console-like boot. Typically used when debugging).
+
+# Restart your Hackintosh to apply all changes made now.
+
+### Step four: enjoy!
+##### Now you can enjoy your fresh installation of macOS!
+
+
 ### Credits
   * OSX Latitute For providing EFI DSDT Patches.
   * Hackontosh Community for providing info on wifi fix
