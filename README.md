@@ -24,7 +24,7 @@ Repository contains configuration, kexts, etc for hackintosh on HP EliteBook 840
       ➡️ Internal camera
       ➡️ WiFi using AirportItlwm
       ➡️ Bluetooth using IntelBluetoothFirmware and IntelBluetoothInjector
-      ➡️ Shutdown/ Reboot/ Sleep
+      ➡️ Shutdown/ Reboot/ Sleep / Wake from sleep.
       ➡️ Speakers and headphones jack
       ➡️ Intel Gigabit Ethernet
       ➡️ iMessage, FaceTime, App Store
@@ -34,7 +34,7 @@ Repository contains configuration, kexts, etc for hackintosh on HP EliteBook 840
       ➡️ SD Card Reader using [Sinetek-rtsx](https://github.com/cholonam/Sinetek-rtsx)
 
 ### What's not working
-    ➡️ Wake from sleep.
+    ➡️ 
     ➡️ trackball
     ➡️ SC Card
     ➡️ HP Docking Station ( Not Tested)
