@@ -15,7 +15,7 @@ Repository contains configuration, kexts, etc for hackintosh on HP EliteBook 840
 
 ### Current configuration
 
-  * macOS: Big Sur 11.1
+  * macOS: Big Sur 11.2
   * OpenCore: 0.6.5
   
   
