@@ -4,6 +4,7 @@ Repository contains configuration, kexts, etc for hackintosh on HP EliteBook 840
 ### macOS versions
 
 * ## Big Sur
+  * 11.2 big sur (Tested)
   * 11.1 Big Sur (Tested)
   * 11.0 Big Sur ( Tested)
   
